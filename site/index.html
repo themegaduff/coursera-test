@@ -3,15 +3,76 @@
 <head>
 	<meta charset="utf-8">
 	<title>Hello Coursera</title>
+<style type="text/css">
+	p { 
+		color: blue;
+		font-size: 20px
+		width: 200px	
+	}
+
+	p.purple {
+		color: mediumpurple;
+	}
+
+	h1 {
+		color: green;
+		font-size: 36px;	
+		text-align: center;
+	}
+
+	h3 {
+		color: cyan;
+		font-size: 30px;
+		font-weight: bold;
+		font-style: italic;
+		opacity: .7;
+	}	
+
+	#quote {
+		font-size: 22px;
+		font-weight: bold;
+		color: darkgreen;
+	}
+
+	div p {
+		color: darkmagenta;
+	}
+
+	div.menu li {
+		list-style: none;
+	}
+
+	div.menu > ul a:link, a:visited {
+		text-decoration: none;
+		background-color: green;
+		border: 1px
+		border-color: blueviolet;
+		color:  whitesmoke;
+		display:  block;
+		width: 200px;
+		margin-bottom: 1px;
+	}
+
+	div.menu a:hover, a:active {
+		background-color: lightgreen;
+		color: black;
+	}
+
+div.menu li:nth-child(3) {
+	font-size: 24px;
+}
+
+	
+</style>
 </head>
 <body>
 <header>Header test 123</header>
 <h1 id="top">Hello Coursera! This is an awesome course</h1>
-<div>
+<div class="menu">
 <ul>
 <li><a href="#section1">Floyd Quote</a></li>
-<li>Iten 2</li>
-<li>Item 3</li>
+<li><a href="http://instagram.com">Instagram</a></li>
+<li><a href="http://google.com">Item 3</a></li>
 	<ul>
 	<li>Sub item 1</li>
 	<li>Sub item 2</li>
@@ -27,10 +88,10 @@
 
 <div>
 <h3>Lorem Ipsum 2</h3>
-<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+<p class="purple">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
 </div>
 
-<div>
+<div class="links">
 <h3>Ordered list</h3>
 <a href="http://lists.com">
 <div>
@@ -43,9 +104,9 @@
 </a>
 </div>
 <section id="section1">
-<div>
+<div class="links">
 	<img src="https://pyxis.nymag.com/v1/imgs/20b/c5b/fb27425c5dede0f79a3fd6271b97ba7e42-31-pink-floyd-feature.2x.rsocial.w600.jpg" width="400" height="209">
-	<p>&quot;My sole intention is <a href="http://pinkfloyd.com" target="blank" title="pink floyd">learning to fly</a>. Condition: grounded, but determined&nbsp;to&nbsp;try&quot;</p>
+	<p id="quote">&quot;My sole intention is <a href="http://pinkfloyd.com" target="blank" title="pink floyd">learning to fly</a>. Condition: grounded, but determined&nbsp;to&nbsp;try&quot;</p>
 </div>
 </section>
 <h3>Subheading 2</h3>
